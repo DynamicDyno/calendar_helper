@@ -85,8 +85,8 @@ module CalendarHelper
       :table_id             => "calendar-#{options[:year]}-#{"%02d" % options[:month]}",
       :table_class          => 'calendar',
       :month_name_class     => 'monthName',
-      :previous_month_class => 'previousMonth'
-      :next_month_class     => 'nextMonth'
+      :previous_month_class => 'previousMonth',
+      :next_month_class     => 'nextMonth',
       :other_month_class    => 'otherMonth',
       :day_name_class       => 'dayName',
       :day_class            => 'day',
