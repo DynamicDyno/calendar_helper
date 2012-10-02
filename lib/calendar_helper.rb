@@ -136,7 +136,7 @@ module CalendarHelper
 
     week_days.each do |wday|
       cal << %(<th id="#{th_id(Date::DAYNAMES[wday], options[:table_id])}" scope='col'>)
-      cal << (options[:abbrev] ? %(<abbr title='#{day_names[wday]}'>#{abbr_day_names[wday]}</abbr>) : day_names[wday])
+      cal << (options[:abbrev] ? %(<abbr title='#{day_names[wday]}'>#{abbr_day_names[wday][0]}</abbr>) : day_names[wday])
       cal << %(</th>)
     end
 
