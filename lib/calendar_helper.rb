@@ -127,7 +127,7 @@ module CalendarHelper
       else
         colspan=7
       end
-      cal << %(<th colspan="#{colspan}" class="#{options[:month_name_class]}">#{options[:calendar_title]}</th>)
+      cal << %(<th colspan="#{colspan}" class="#{options[:month_name_class]}">#{options[:calendar_title]} #{options[:year]}</th>)
       cal << %(<th colspan="1" class="#{options[:next_month_class]}">#{options[:next_month_text]}</th>) if options[:next_month_text]
       cal << %(</tr>)
     end
