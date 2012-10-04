@@ -130,7 +130,7 @@ module CalendarHelper
         colspan=7
       end
       cal << %(<th colspan="#{colspan}" class="#{options[:month_name_class]}">#{options[:calendar_title]} #{options[:year]}</th>)
-      cal << %(<th colspan="1" class="#{options[:next_month_class]}" title="#{options[:next_month_title]}"><a id="minus-month" class="dark-gray" title="#{options[:next_month_title]}" href="javascript://">#{options[:next_month_text]}</a></th>) if options[:next_month_text]
+      cal << %(<th colspan="1" class="#{options[:next_month_class]}" title="#{options[:next_month_title]}"><a id="add-month" class="dark-gray" title="#{options[:next_month_title]}" href="javascript://">#{options[:next_month_text]}</a></th>) if options[:next_month_text]
       cal << %(</tr>)
     end
 
