@@ -124,13 +124,13 @@ module CalendarHelper
     if (options[:month_header])
       cal << %(<tr>)
       if options[:previous_month_text] or options[:next_month_text]
-        cal << %(<th colspan="1" class="#{options[:previous_month_class]}" title="#{options[:previous_month_title]}">#{options[:previous_month_text]}</th>)
+        cal << %(<th colspan="1" class="#{options[:previous_month_class]}"><a id="minus-month" class="dark-gray" title="#{options[:previous_month_title]}" href="javascript://">#{options[:previous_month_text]}</a></th>)
         colspan=5
       else
         colspan=7
       end
       cal << %(<th colspan="#{colspan}" class="#{options[:month_name_class]}">#{options[:calendar_title]} #{options[:year]}</th>)
-      cal << %(<th colspan="1" class="#{options[:next_month_class]}" title="#{options[:next_month_title]}">#{options[:next_month_text]}</th>) if options[:next_month_text]
+      cal << %(<th colspan="1" class="#{options[:next_month_class]}" title="#{options[:next_month_title]}"><a id="minus-month" class="dark-gray" title="#{options[:next_month_title]}" href="javascript://">#{options[:next_month_text]}</a></th>) if options[:next_month_text]
       cal << %(</tr>)
     end
 
